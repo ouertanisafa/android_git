@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity  {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.home);
-/*
+
         //region button_suivant
         nom =(TextView) findViewById(R.id.nom);
         prenom=(TextView) findViewById(R.id.prenom);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity  {
         cin= (TextView) findViewById(R.id.cin);
         email=(TextView) findViewById(R.id.email);
         adresse =(TextView) findViewById(R.id.adresse);
-///////// stop !!!! ///
+
 
         ImageButton suivantButton = (ImageButton) findViewById(R.id.suivant);
 
@@ -74,15 +74,15 @@ public class MainActivity extends AppCompatActivity  {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
-                }
+                }*/
             }
         });
-        */
+
 
         //endregion
 
         //region date_de_naissance
-/*
+
         dateDeNaissance = (TextView) findViewById(R.id.date);
         nom = (TextView) findViewById(R.id.nom);
         dateDeNaissance.setOnClickListener(new View.OnClickListener() {
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity  {
                 //Log.d(Tag, "a="+nom.getText());
              }
             };
-*/
+
 //endregion
 
         }
