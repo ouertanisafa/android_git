@@ -107,8 +107,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:id="@+id/marqueH"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
+
                 android:background="@drawable/oval"
                 android:hint="Marque d&apos;Huile"
                 android:textAlignment="center"

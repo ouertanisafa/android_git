@@ -65,7 +65,11 @@ public class MainActivity extends AppCompatActivity  {
 
         suivantButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-               startActivity(new Intent(MainActivity.this, Main2Activity.class));
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
+               //startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
               /*  Log.d("nom "," "+nom.getText().toString());
                 try {

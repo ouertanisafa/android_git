@@ -46,7 +46,10 @@ public class video  extends AppCompatActivity {
 
             @Override
             public void onCompletion(MediaPlayer vmp) {
-                startActivity(new Intent(video.this, MainActivity.class));
+                Intent intent = new Intent(video.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -58,7 +61,10 @@ public class video  extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(video.this, MainActivity.class));
+                Intent intent = new Intent(video.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
             }
         });
 
