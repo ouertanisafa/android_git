@@ -119,17 +119,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="15dp">
+
                 <ImageButton
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:id="@+id/facebook"
-                    android:background="@drawable/btnfb"
                     android:padding="40dp"
                     android:layout_alignTop="@+id/suivant"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="20dp"
-                    android:layout_gravity="left|bottom" />
+                    android:layout_gravity="left|bottom"
+                    android:layout_toLeftOf="@+id/suivant"
+                    android:layout_toStartOf="@+id/suivant"
+                    android:layout_alignBottom="@+id/suivant"
+                    android:background="@drawable/btnfb" />
+
 
                 <ImageButton
                     android:layout_width="150dp"

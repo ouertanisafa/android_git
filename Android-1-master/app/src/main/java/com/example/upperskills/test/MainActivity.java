@@ -1,8 +1,6 @@
 package com.example.upperskills.test;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
-import android.app.DownloadManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,31 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.android.volley.AuthFailureError;
-import com.android.volley.NetworkResponse;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.HttpHeaderParser;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -45,6 +26,8 @@ public class MainActivity extends AppCompatActivity  {
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private  TextView nom,prenom,cin,email,adresse ;
     final Context context = this;
+    int MY_REQUEST_ID;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,13 +45,36 @@ public class MainActivity extends AppCompatActivity  {
 
 
         ImageButton suivantButton = (ImageButton) findViewById(R.id.suivant);
+        ImageButton facebook = (ImageButton) findViewById(R.id.facebook);
 
         suivantButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                finish();
+
+                //// controle de saisie
+
+                if(nom.getText().toString().trim().matches("") && nom.getText().toString().length()<3){
+
+                    showDialog("nom");
+
+
+                }else if(prenom.getText().toString().trim().matches("") && prenom.getText().toString().length()<3){
+                    showDialog("Prenom");
+                }else if(dateDeNaissance.getText().toString().trim().matches("")){
+                    showDialog("Date de naissance");
+                } else if(!email.getText().toString().trim().matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")){
+                    showDialog("Email");
+                }else if(!cin.getText().toString().trim().matches("[0-9]{8}")){
+                    showDialog("Cin");
+                }else if(adresse.getText().toString().trim().matches("")){
+                    showDialog("Adresse");
+                }else startActivity(new Intent(MainActivity.this,Main2Activity.class));
+                /////
+
+
+
+
+
+
                //startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
               /*  Log.d("nom "," "+nom.getText().toString());
@@ -79,6 +85,12 @@ public class MainActivity extends AppCompatActivity  {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }*/
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivityForResult(new Intent(MainActivity.this,FaceConnect.class),MY_REQUEST_ID);
+
             }
         });
 
@@ -122,9 +134,11 @@ public class MainActivity extends AppCompatActivity  {
 
 //endregion
 
+
+
         }
 
-    private void sendPostReq(final String name, String prenom, String date_de_naissance, String email, String cin, String adresse
+    /*private void sendPostReq(final String name, String prenom, String date_de_naissance, String email, String cin, String adresse
     ) throws JSONException {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         String URL = "http://10.0.2.2:3000/name";
@@ -183,17 +197,17 @@ public class MainActivity extends AppCompatActivity  {
         };
 
         requestQueue.add(stringRequest);
-    }
+    }*/
 
     private void showDialog(String msg){
         android.support.v7.app.AlertDialog.Builder alertDialogBuilder = new android.support.v7.app.AlertDialog.Builder(context);
 
         // set title
-        alertDialogBuilder.setTitle("Enregsitrement");
+        alertDialogBuilder.setTitle("Erreur");
 
         // set dialog message
         alertDialogBuilder
-                .setMessage("Votre enregistrement a été enregsitrer avec "+msg+" !!")
+                .setMessage("Veuillez remplire le champ : "+msg+" !!")
                 .setCancelable(false)
                 .setPositiveButton("OK",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
@@ -212,5 +226,19 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+    protected void onActivityResult(int requestCode, int resultCode,
+                                    Intent data) {
+        if (requestCode == MY_REQUEST_ID) {
+            if (resultCode == RESULT_OK) {
+                nom.setText(data.getStringExtra("firstName"));
+                prenom.setText(data.getStringExtra("lastName"));
+
+
+            }
+        }
+    }
+
+
+
 }
 

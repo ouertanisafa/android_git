@@ -78,7 +78,7 @@ public class video  extends AppCompatActivity {
 
             public void onFinish() {
                 btn.setEnabled(true);
-                btn.setText("Skip!");
+                btn.setText("Skip !");
             }
         }.start();
     }
