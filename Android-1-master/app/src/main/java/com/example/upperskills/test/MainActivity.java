@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
+import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
 import android.util.Log;
@@ -18,6 +19,20 @@ import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -48,43 +63,42 @@ public class MainActivity extends AppCompatActivity  {
         ImageButton facebook = (ImageButton) findViewById(R.id.facebook);
 
         suivantButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+            public void onClick(View v) {
 
                 //// controle de saisie
 
-                if(nom.getText().toString().trim().matches("") && nom.getText().toString().length()<3){
+                if (nom.getText().toString().trim().matches("") && nom.getText().toString().length() < 3) {
 
                     showDialog("nom");
 
 
-                }else if(prenom.getText().toString().trim().matches("") && prenom.getText().toString().length()<3){
+                } else if (prenom.getText().toString().trim().matches("") && prenom.getText().toString().length() < 3) {
                     showDialog("Prenom");
-                }else if(dateDeNaissance.getText().toString().trim().matches("")){
+                } else if (dateDeNaissance.getText().toString().trim().matches("")) {
                     showDialog("Date de naissance");
-                } else if(!email.getText().toString().trim().matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")){
+                } else if (!email.getText().toString().trim().matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
                     showDialog("Email");
-                }else if(!cin.getText().toString().trim().matches("[0-9]{8}")){
+                } else if (!cin.getText().toString().trim().matches("[0-9]{8}")) {
                     showDialog("Cin");
-                }else if(adresse.getText().toString().trim().matches("")){
+                } else if (adresse.getText().toString().trim().matches("")) {
                     showDialog("Adresse");
-                }else startActivity(new Intent(MainActivity.this,Main2Activity.class));
+                } else {
+
                 /////
 
 
+                //startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
+                    Log.d("nom ", " " + nom.getText().toString());
+                    try {
+                        sendPostReq(nom.getText().toString(), prenom.getText().toString(), dateDeNaissance.getText().toString()
+                                , email.getText().toString(), cin.getText().toString(), adresse.getText().toString());
 
-
-
-               //startActivity(new Intent(MainActivity.this, Main2Activity.class));
-
-              /*  Log.d("nom "," "+nom.getText().toString());
-                try {
-                    sendPostReq(nom.getText().toString(), prenom.getText().toString(), dateDeNaissance.getText().toString()
-                            ,email.getText().toString(),cin.getText().toString(),adresse.getText().toString());
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }*/
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    startActivity(new Intent(MainActivity.this, Main2Activity.class));
+                }
             }
         });
         facebook.setOnClickListener(new View.OnClickListener(){
@@ -138,7 +152,9 @@ public class MainActivity extends AppCompatActivity  {
 
         }
 
-    /*private void sendPostReq(final String name, String prenom, String date_de_naissance, String email, String cin, String adresse
+
+
+    private void sendPostReq(final String name, String prenom, String date_de_naissance, String email, String cin, String adresse
     ) throws JSONException {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         String URL = "http://10.0.2.2:3000/name";
@@ -197,7 +213,8 @@ public class MainActivity extends AppCompatActivity  {
         };
 
         requestQueue.add(stringRequest);
-    }*/
+    }
+
 
     private void showDialog(String msg){
         android.support.v7.app.AlertDialog.Builder alertDialogBuilder = new android.support.v7.app.AlertDialog.Builder(context);
