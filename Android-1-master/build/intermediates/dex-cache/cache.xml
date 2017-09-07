@@ -1,2 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.1_5875e09f4597e6a515d6c6e4315b4ba12d7eec4b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.1_8c5ea97793eac8c4ce6e57aca8cb4e9a9dd7971b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.1_dbfd5d0416a78cc4d838a3ce691fe1d24b7f5537/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_0896305250be3b8045650e5d3993d70233050a97/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.1_478c431569aaba1abba06057259f8e0e37eb7595/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mcxiaoke.volley-library-aar-1.0.0_11300736c59aa507ad950e01ccbab0541d540351/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.3.1_6a88169cf3bd611098ed3a1bd743426bd65a3698/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.26.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e09663005d70dcedff0bb77211b9ac52d8b69421">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.26.0_9dea28e156b81729609497266481b4de576ec536/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.3.1_030551e3722c7fde43322f6d65ec4f99de98158d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_bd14663967a73febb311c5ea598b960ad0b03b00/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d28f66505dea76bd6d809dfa5db5b17f555cd8e2">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1444c1a3f3c182a9d4cdb6e44a39f02917c731f2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a0bd6c4ac951a06b45bb51826e8bf6fcfbcc0ecb">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35a9a8213c9a2ed60266e5fa0cdee1680db7f739/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.1_89579f01b3e500be564a6f46f6edf4a5bcb6fc3a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_c037e10264a5debd3118f5bcbcfe7d84a6976d22/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.1_1a613693070a30ea91a615c3105237fc443ce74e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.1_c6825648b971581a8f4c315bdcffe1928e1d09d9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.1_5db4e70e387e04f0791ff01122c1a1b8c286b2ca/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.3.0_727be0daa5da48f36da4b6ab97547f75a4139a49/classes.dex" />
+    </item>
+    <item
+        jar="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/upperskills/Desktop/safa_projet/safa_android/android_git/Android-1-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.1_860e1799b793b8773d9b67d89bf11eb7db433598/classes.dex" />
+    </item>
+
+</items>
