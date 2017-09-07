@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity  {
     private void sendPostReq(final String name, String prenom, String date_de_naissance, String email, String cin, String adresse
     ) throws JSONException {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String URL = "https://ouertanisafa.herokuapp.com/name";
+        String URL = "";
         JSONObject jsonBody = new JSONObject();
         jsonBody.put("nom", name);
         jsonBody.put("prenom",prenom);
